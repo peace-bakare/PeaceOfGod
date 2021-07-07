@@ -1,3 +1,244 @@
-.sized-form {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-right {
+    margin-left: 65em;
+}
+
+.navigation {
+    background-color: azure;
+    padding: 4em;
+    width: 45em;
+    height: 35em;
+}
+
+.navigator {
+    padding-bottom: 4em;
+}
+
+.description {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.form-div {
     background: url("image-assets/anton-mishin.png");
+    width: 41em;
+    position: absolute;
+    margin: 6em 15em 15em 38em;
+}
+
+.navbar-form{
+    width: 70%;
+    height: 70%;
+    margin: 10% auto;
+}
+
+.online-platform {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.buy-now {
+    text-align: center;
+}
+
+.details {
+    margin-top: 1%;
+    margin-left: 18%;
+}
+
+#details {
+    padding: 3%;
+}
+
+.operations {
+    text-align: center;
+    padding: 8em;
+    background-color: azure;
+}
+
+.countries {
+    padding: 0 0 2em 0;
+}
+
+/* .nations {
+    margin: 0 30em 2em 20em;
+} */
+
+.nigeria {
+    padding-right: 15em;
+}
+
+.united {
+    padding-right: 15em;
+}
+
+.coming-soon {
+    padding: 2em 0 0 0;
+}
+
+.repeated-grid {
+    padding: 0 10em 0 82em;
+}
+
+.how-it-works {
+    text-align: center;
+}
+
+.landlord-machine {
+    padding: 7em;
+}
+
+.landlord {
+    padding: 2em 12em 0 3em;
+}
+/* .machine-div{
+    padding: 10em;
+    border-radius: 5em;
+} */
+
+.buyer-rent {
+    padding: 7em;
+}
+
+.buyer {
+    padding: 2em 0 0 8em;
+}
+
+.seller-offer {
+    padding: 7em;
+}
+
+.seller {
+    padding: 2em 12em 0 3em;
+}
+
+.pelow-payment {
+    padding: 7em;
+}
+
+.pelow-text {
+    padding: 2em 0 0 8em;
+}
+
+.afford-it {
+    padding: 6em;
+    background-color: azure;
+}
+
+.afford-text {
+    text-align: center;
+    padding: 0 0 3em 0;
+}
+
+.dollar-text {
+    text-align: center;
+    padding-right: 3em;
+}
+
+.bounce-text {
+    text-align: center;
+    padding-right: 3em;
+}
+
+.count-text {
+    text-align: center;
+    padding: 0 2em 0 3em;
+}
+
+.create-donation {
+    padding: 1em 0 0 0;
+}
+
+.general-community {
+    padding: 1em 0 0 0;
+}
+
+.receive-money {
+    padding: 1em 0 0 0;
+}
+
+.card {
+    border-radius: 50em;
+}
+
+.first-card {
+    padding: 10em 2em 5em 4em;
+}
+
+.first-card-text {
+    position: absolute;
+    padding: 6em 8em 4em 3em;
+}
+
+.second-card-text {
+    position: absolute;
+    padding: 6em 8em 4em 3em;
+}
+
+.third-card-text {
+    position: absolute;
+    padding: 6em 8em 4em 3em;
+}
+
+.cards-side-text {
+    padding: 15em 6em 4em 10em;
+}
+
+.safe-text{
+    padding: 10em 8em 4em 8em;
+}
+
+.last-paragraph {
+    padding-top: 8em;
+    text-align: center;
+}
+
+.big-deal {
+    padding-bottom: 3em;
+}
+
+.vanguard {
+    max-width: 10em;
+    padding-right: 3em;
+}
+
+.this-day {
+    max-width: 12em;
+    padding-right: 3em;
+}
+
+.statesman {
+    max-width: 12em;
+    padding-right: 3em;
+}
+
+.moment {
+    max-width: 12em;
+    padding-right: 3em;
+}
+
+.google {
+    max-width: 12em;
+    padding-right: 3em;
+}
+
+.cost-housing {
+    padding-top: 3em;
+}
+
+.ready-to-begin {
+    background-color: #24bdbd;
+    padding: 8em;
+    margin-top: 3em;
+    border-radius: 80% 80% 0 0 / 90px;
+}
+
+.begin {
+    padding-bottom: 1em;
+    color: white;
 }

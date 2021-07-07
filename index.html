@@ -10,180 +10,251 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div>
-        <img src="image-assets">
-        <p>Login</p>
-        <button type="button" class="btn btn-success">Register</button>
-    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="image-assets/Icon.png" alt="Icon"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">                
+                <span class="d-flex">
+                    <button class="btn btn-light" type="button">Login</button>
+                    <button class="btn btn-success" type="button">Register</button>
+                </span>
+              </div>
+            </div>
+        </nav>
+    </header>
 
-    <div>
-        <div>
-            <h2>We Help You Cut Your Coat According To Your Size</h2>
-            <!-- <nav>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li><a class="nav-link active" href="#owner">For Owner</a></li>
-                    <li><a class="nav-link" href="#seeker">For Seeker</a></li>
-                    <li><a class="nav-link" href="#donor">For Donors</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav> -->
-            <nav>
+    <div class="d-flex topmost">
+        <div class="navigation">
+            <h2 class="description">We Help You Cut Your Coat <br> According To Your Size</h2>
+            <nav class="navigator">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a class="nav-link active" id="nav-owner-tab" data-toggle="tab" href="#nav-owner" role="tab" aria-controls="nav-owner" aria-selected="true">For Owner</a>
                   <a class="nav-link" id="nav-seeker-tab" data-toggle="tab" href="#nav-seeker" role="tab" aria-controls="nav-seeker" aria-selected="false">For Seeker</a>
                   <a class="nav-link" id="nav-donor-tab" data-toggle="tab" href="#nav-donor" role="tab" aria-controls="nav-donor" aria-selected="false">For Donor</a>
                 </div>
             </nav>
-              <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-owner" role="tabpanel" aria-labelledby="nav-owner-tab">
-                    <h1>We <span class="typed" data-typed-items="buy, rent"> buy </span> your place from you upfront</h1>
+                    <h1>We <span class="typed" data-typed-items="buy, rent"> buy </span> your <br> place from you <br> upfront</h1>
                 </div>
                 <div class="tab-pane fade" id="nav-seeker" role="tabpanel" aria-labelledby="nav-seeker-tab">
                     <h1><span class="typed" data-typed-items="Rent, Buy"> Rent </span> now and pay <br> later at 0% <br> interest and at <br> your own pace</h1>
                 </div>
                 <div class="tab-pane fade" id="nav-donor" role="tabpanel" aria-labelledby="nav-donor-tab">
-                    <h1>Lend a helping <br> hand to <span class="typed" data-typed-items="schools, families, charities, companies, friends, colleagues"> schools </span>in need</h1>
+                    <h1>Lend a helping <br> hand to <span class="typed" data-typed-items="schools, families, charities, companies, friends, colleagues"> schools </span>in <br>need</h1>
                 </div>
-              </div>
-
-            
+            </div>            
         </div>
+
 
         <div class="form-div">
-            <form class="sized-form">
-                <input placeholder="Username" type="text"/><br>
-                <input placeholder="Email" type="text"/><br>
-                <input placeholder="Password" type="password"/><br>
-                <input placeholder="Repeat Password" type="password"/><br>
-                <select name="options" id="options">
-                    <option value="Select">Select...</option>
-                </select><br>
-                <span>
-                    <input type="checkbox" id="terms" name="terms" value="terms">
-                    <label for="terms">I agree with your <a href="#terms" style="color: aqua;">Terms & Conditions</a> </label>
-                </span><br>
-
-                <button type="button" class="btn btn-success">Register</button>
+            <form class="navbar-form">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form1Example1" class="form-control" placeholder="Username"/>
+                </div>
+    
+                <div class="form-outline mb-4">
+                  <input type="email" id="form1Example2" class="form-control" placeholder="Email"/>
+                </div>
+    
+                <div class="form-outline mb-4">
+                    <input type="password" id="form1Example1" class="form-control" placeholder="Password"/>
+                </div>
+    
+                <div class="form-outline mb-4">
+                <input type="password" id="form1Example2" class="form-control" placeholder="Repeat Password"/>
+                </div>
+    
+                <div class="form-outline mb-4">
+                    <select name="options" id="options" class="form-control">
+                        <option value="Select">Select...</option>
+                    </select>
+                </div>
+    
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                      <label class="form-check-label" for="form1Example3"> I agree with your <a href="#terms" style="color: aqua;">Terms & Conditions</a></label>
+                    </div>
+                  </div>             
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Register</button>
             </form>
-        </div>
+        </div>        
     </div>
 
     <div>
-        <h2>Best online platform for Real Estate and Properties</h2><br>
-        <h3>Buy home now and pay later</h3>
-        <div>
-            <h3>People save more <br>money (both <br> owners & seekers)</h3> |
-            <h3>Sellers/Landlords <br> have a guaranteed <br> payout</h3> |
-            <h3>Seekers don't pay <br> interest whatsoever</h3>
+        <h1 class="online-platform">Best online platform for Real Estate and Properties</h1><br>
+        <h3 class="buy-now">Buy home now and pay later</h3>
+        <div class="d-flex details">
+            <h3 class="" id="details">People save more <br>money (both <br> owners & seekers)</h3> 
+            <h3 class="" id="details">Sellers/Landlords <br> have a guaranteed <br> payout</h3> 
+            <h3 class="" id="details">Seekers don't pay <br> interest whatsoever</h3>
         </div>
     </div>
 
-    <div>
-        <h3>Now, our operations span the following countries</h3>
-        <span>
-            <img src="image-assets/nigeria.png">
-            <img src="image-assets/united.png">
-            <img src="image-assets/canada.png">
-        </span>
-        <h3>US & Canada is COMING SOON!</h3>
-    </div>
-
-    <div>
-        <h2>How it works</h2>
-        <span>
-            <h3>Landlord / Seller lists <br> property on Pelow</h3>
-            <img src="image-assets/machine.png">
-        </span>
-        <span>
-            <img src="image-assets/Rent.png">
-            <h3>Buyer / Renters submits <br> offer for property</h3>            
-        </span>
-        <span>
-            <h3>Seller accepts offer</h3>
-            <img src="image-assets/Offer.png">
-        </span>
-        <span>
-            <img src="image-assets/Payment.png">
-            <h3>Pelow makes payment, <br> everybody wins</h3>            
-        </span>
-    </div>
-
-    <div>
-        <h3>What if you can't afford it?</h3>
-        <div>
-            <img src="image-assets/Dollar.png">
-            <h3>Simply Create Your Donation <br> Campaign</h3>
-            <a href="#learn"> Learn more </a>
+    <div class="operations">
+        <h3 class="countries">Now, our operations span the following countries</h3>
+        <div class="nations">
+            <img src="image-assets/nigeria.png" class="nigeria">
+            <img src="image-assets/united.png" class="united">
+            <img src="image-assets/canada.png" class="canada">
         </div>
-        <div>
-            <img src="image-assets/Group bounce.png">
-            <h3>Our General Community <br> Donates</h3>
-            <a href="#learn"> Learn more </a>
-        </div>
-        <div>
-            <img src="image-assets/Group count.png">
-            <h3>Receive Money Raised After <br> Campaign End</h3>
-            <a href="#learn"> Learn more </a>
-        </div>
-    </div>
+        <h3 class="coming-soon">US & Canada is COMING SOON!</h3>
+    </div>    
+    <img src="image-assets/Repeat Grid.png" class="repeated-grid">
 
-    <div>
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-body">
-              <h3 class="card-title">30,000 +</h3>
-              <p class="card-text" style="color: red;">Users</p>
+    <div class="working">
+        <h1 class="how-it-works">How it works</h1>
+        <div class="d-flex landlord-machine">
+            <h3 class="landlord">Landlord / Seller lists <br> property on Pelow</h3>
+            <div class="machine-div">
+                <img src="image-assets/machine.png">
             </div>
-            <div class="card-footer" style="color: red;"></div>
         </div>
 
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-body">
-              <h3 class="card-title">Presence in</h3>
-              <p class="card-text" style="color:rgb(64, 9, 153);">2 Continents</p>
+        <div class="d-flex buyer-rent">
+            <div class="rent-div">
+                <img src="image-assets/Rent.png">
             </div>
-            <div class="card-footer" style="color: rgb(64, 9, 153);"></div>
+            <h3 class="buyer">Buyer / Renters submits <br> offer for property</h3>            
         </div>
 
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-body">
-              <h3 class="card-title">Thousands of</h3>
-              <p class="card-text" style="color:rgb(9, 153, 110);">Listings</p>
+        <div class="d-flex seller-offer">
+            <h3 class="seller">Seller accepts offer</h3>
+            <div class="offer-div">
+                <img src="image-assets/Offer.png">
             </div>
-            <div class="card-footer" style="color: rgb(9, 153, 110);"></div>
         </div>
 
-        <div>
-            <h3>We know how to help you</h3>
-            <p>Move in pay later houses in Lagos, Abuja, <br> Nigeria. Best online platform for raising <br> donations for housing.</p>
+        <div class="d-flex pelow-payment">
+            <div class="payment-div">
+                <img src="image-assets/Payment.png">
+            </div>
+            <h3 class="pelow-text">Pelow makes payment, <br> everybody wins</h3>            
         </div>
-
-        <span>
-            <h3>You are safe with us</h3>
-            <p>We have company presence in over 4 countries with <br> hands-on technical expertise to keep your <br> information safe at all times.</p>
-            <img src="image-assets/Human.png">
-        </span>
     </div>
 
-    <div>
-        <h3>We're kind of a big deal</h3>
-        <span>
+    <div class="afford-it">
+        <h3 class="afford-text">What if you can't afford it?</h3>
+        <div class="d-flex image-text">
+            <div class="dollar-text">
+                <img src="image-assets/Dollar.png">
+                <h3 class="create-donation">Simply Create Your Donation <br> Campaign</h3>
+                <a href="#learn"> Learn more </a>
+            </div>
+            <div class="bounce-text">
+                <img src="image-assets/Group bounce.png">
+                <h3 class="general-community">Our General Community <br> Donates</h3>
+                <a href="#learn"> Learn more </a>
+            </div>
+            <div class="count-text">
+                <img src="image-assets/Group count.png">
+                <h3 class="receive-money">Receive Money Raised After <br> Campaign End</h3>
+                <a href="#learn"> Learn more </a>
+            </div>
+        </div>
+    </div>
+
+    <div>        
+        <div class="d-flex">
+            <div class="first-card">
+                <div class="first-card-text">
+                    <h3 class="card-title">30,000 +</h3>
+                    <p class="card-text" style="color: red;">Users</p>
+                </div>
+                <img src="image-assets/first-card.png">                
+            </div>
+            <div class="two-cards">
+                <div class="second-card">
+                    <div class="second-card-text">
+                        <h3 class="card-title">Presence in</h3>
+                        <p class="card-text" style="color:rgb(64, 9, 153);">2 Continents</p>
+                    </div>
+                    <img src="image-assets/second-card.png">                    
+                </div>
+                <div class="third-card">
+                    <div class="third-card-text">
+                        <h3 class="card-title">Thousands of</h3>
+                        <p class="card-text" style="color:rgb(9, 153, 110);">Listings</p>
+                    </div>
+                    <img src="image-assets/third-card.png">                    
+                </div>
+            </div>
+            <div class="cards-side-text">
+                <h3 class="help-you">We know how to help you</h3>
+                <p class="move-in">Move in pay later houses in Lagos, Abuja, <br> Nigeria. Best online platform for raising <br> donations for housing.</p>
+            </div>
+        </div>        
+
+        <div class="safe-images">
+            <div class="d-flex">
+                <div class="safe-text-image">
+                    <div class="safe-text"> 
+                        <h3>You are safe with us</h3>
+                        <p>We have company presence in over 4 countries with <br> hands-on technical expertise to keep your <br> information safe at all times.</p>
+                    </div>                    
+                    <img src="image-assets/grid2.png" class="grid">
+                </div>
+                <img src="image-assets/Human.png" class="human">
+            </div>
+        </div>        
+    </div>
+
+    <div class="last-paragraph">
+        <h3 class="big-deal">We're kind of a big deal</h3>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-owner" role="tabpanel" aria-labelledby="nav-owner-tab">
+                <span class="image-set">
+                    <img src="image-assets/Vanguard.png" class="vanguard">
+                    <img src="image-assets/This_day_.png" class="this-day">
+                    <img src="image-assets/The_STATESMAN_.png" class="statesman">
+                    <img src="image-assets/Moment_.png" class="moment">
+                    <img src="image-assets/Google_.png" class="google">
+                </span>
+            </div>
+            <div class="tab-pane fade" id="nav-seeker" role="tabpanel" aria-labelledby="nav-seeker-tab">
+                <span class="image-set">
+                    <img src="image-assets/Vanguard_.png" class="vanguard>
+                    <img src="image-assets/This_day.png" class="this-day">
+                    <img src="image-assets/The_STATESMAN_.png" class="statesman">
+                    <img src="image-assets/Moment_.png" class="moment">
+                    <img src="image-assets/Google_.png" class="google">
+                </div>
+            <div class="tab-pane fade" id="nav-donor" role="tabpanel" aria-labelledby="nav-donor-tab">
+                <span class="image-set">
+                    <img src="image-assets/Vanguard_.png" class="vanguard">
+                    <img src="image-assets/This_day_.png" class="this-day">
+                    <img src="image-assets/The_STATESMAN.png" class="statesman">
+                </span>
+                    <img src="image-assets/Moment_.png" class="moment">
+                    <img src="image-assets/Google_.png" class="google">
+                </span>
+            </div>
+          </div>
+        <!-- <span>
             <img src="image-assets/Vanguard.png">
             <img src="image-assets">
             <img src="image-assets">
             <img src="image-assets">
             <img src="image-assets">
             <img src="image-assets">
-        </span>
-        <blockquote>On pelow app, you can find low cost housing, raise donations negotiate for the property you like <br>
-        with confidence as it's one of the best online platform for real estate and properties
+        </span> -->
+        <blockquote class="cost-housing">"On pelow app, you can find low cost housing, raise donations negotiate for the property you like <br>
+        with confidence as it's one of the best online platform for real estate and properties"
         </blockquote>
-    </div>
 
-    <div>
-        <h2>Ready to begin?</h2>
-        <button type="button" class="btn btn-success">Register Now</button>
+        <div class="ready-to-begin">
+            <h2 class="begin">Ready to begin?</h2>
+            <button type="button" class="btn btn-light">Register Now</button>
+        </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
