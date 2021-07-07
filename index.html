@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="index.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script> 
+        // Array of words 
+        var owner = ['buy', 'rent']; 
+        // Function that executes every 2000 milliseconds 
+        var t = setInterval(function() { 
+          // Random number generator 
+          var randomNumber = Math.round( Math.random() * (owner.length-1) ); 
+          // Change the word in the span for a random one in the array of words 
+          $('#changing-owner').html( owner[ randomNumber ] ); 
+        }, 1000); 
+
+        // Array of words 
+        var seeker = ['Rent', 'Buy']; 
+        // Function that executes every 2000 milliseconds 
+        var t = setInterval(function() { 
+          // Random number generator 
+          var randomNumber = Math.round( Math.random() * (seeker.length-1) ); 
+          // Change the word in the span for a random one in the array of words 
+          $('#changing-seeker').html( seeker[ randomNumber ] ); 
+        }, 1000); 
+
+        // Array of words 
+        var donor = ['schools', 'families', 'charities', 'companies', 'friends', 'colleagues'];
+        // Function that executes every 2000 milliseconds 
+        var t = setInterval(function() { 
+          // Random number generator 
+          var randomNumber = Math.round( Math.random() * (donor.length-1) ); 
+          // Change the word in the span for a random one in the array of words 
+          $('#changing-donor').html( donor[ randomNumber ] ); 
+        }, 1000);         
+        </script> 
 </head>
 <body>
     <header class="header">
@@ -18,9 +49,9 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">                
-                <span class="d-flex">
+                <span class="d-flex login-register">
                     <button class="btn btn-light" type="button">Login</button>
-                    <button class="btn btn-success" type="button">Register</button>
+                    <button class="btn" style="background-color: #39c0c0; color: white;" type="button">Register</button>
                 </span>
               </div>
             </div>
@@ -39,17 +70,16 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-owner" role="tabpanel" aria-labelledby="nav-owner-tab">
-                    <h1>We <span class="typed" data-typed-items="buy, rent"> buy </span> your <br> place from you <br> upfront</h1>
+                    <h1>We <span class="typed" id="changing-owner" style="color: rgb(56, 56, 184);"> buy  </span> your <br> place from you <br> upfront</h1>
                 </div>
                 <div class="tab-pane fade" id="nav-seeker" role="tabpanel" aria-labelledby="nav-seeker-tab">
-                    <h1><span class="typed" data-typed-items="Rent, Buy"> Rent </span> now and pay <br> later at 0% <br> interest and at <br> your own pace</h1>
+                    <h1><span class="typed" id="changing-seeker" style="color: rgb(187, 59, 59);"> Rent </span> now and pay <br> later at 0% <br> interest and at <br> your own pace</h1>
                 </div>
                 <div class="tab-pane fade" id="nav-donor" role="tabpanel" aria-labelledby="nav-donor-tab">
-                    <h1>Lend a helping <br> hand to <span class="typed" data-typed-items="schools, families, charities, companies, friends, colleagues"> schools </span>in <br>need</h1>
+                    <h1>Lend a helping <br> hand to <span class="typed" id="changing-donor" style="color: #39c0c0;"> schools </span> in <br>need</h1>
                 </div>
             </div>            
         </div>
-
 
         <div class="form-div">
             <form class="navbar-form">
@@ -83,65 +113,69 @@
                     </div>
                   </div>             
                 </div>
-                <button type="submit" class="btn btn-success btn-block">Register</button>
+                <button type="submit" class="btn btn-block" style="background-color: #39c0c0; color: white; border-radius: 5px;">Register</button>
             </form>
         </div>        
     </div>
 
     <div>
-        <h1 class="online-platform">Best online platform for Real Estate and Properties</h1><br>
+        <h1 class="online-platform"><strong>Best online platform for Real Estate and Properties</strong></h1><br>
         <h3 class="buy-now">Buy home now and pay later</h3>
         <div class="d-flex details">
-            <h3 class="" id="details">People save more <br>money (both <br> owners & seekers)</h3> 
-            <h3 class="" id="details">Sellers/Landlords <br> have a guaranteed <br> payout</h3> 
-            <h3 class="" id="details">Seekers don't pay <br> interest whatsoever</h3>
+            <h3 class="" id="details"><strong>People save more <br>money (both <br> owners & seekers)</strong></h3>
+            <div class = "vertical-line-one"></div>
+            <h3 class="" id="details"><strong>Sellers/Landlords <br> have a guaranteed <br> payout</strong></h3>
+            <div class = "vertical-line-two"></div>
+            <h3 class="" id="details"><strong>Seekers don't pay <br> interest whatsoever</strong></h3>
         </div>
     </div>
 
     <div class="operations">
-        <h3 class="countries">Now, our operations span the following countries</h3>
+        <h3 class="countries"><strong>Now, our operations span the following countries</strong></h3>
         <div class="nations">
             <img src="image-assets/nigeria.png" class="nigeria">
             <img src="image-assets/united.png" class="united">
             <img src="image-assets/canada.png" class="canada">
         </div>
-        <h3 class="coming-soon">US & Canada is COMING SOON!</h3>
-    </div>    
-    <img src="image-assets/Repeat Grid.png" class="repeated-grid">
+        <h3 class="coming-soon">US & Canada is COMING SOON!</h3>   
+        <img src="image-assets/Repeat Grid.png" class="repeated-grid"><br>
+    </div> 
 
     <div class="working">
-        <h1 class="how-it-works">How it works</h1>
-        <div class="d-flex landlord-machine">
-            <h3 class="landlord">Landlord / Seller lists <br> property on Pelow</h3>
-            <div class="machine-div">
-                <img src="image-assets/machine.png">
+        <h1 class="how-it-works"><strong>How it works</strong></h1>
+        <div class="image-text-mix">
+            <div class="d-flex landlord-machine">
+                <h3 class="landlord"><strong>Landlord / Seller lists <br> property on Pelow</strong></h3>
+                <div class="machine-div">
+                    <img src="image-assets/machine.png">
+                </div>
             </div>
-        </div>
-
-        <div class="d-flex buyer-rent">
-            <div class="rent-div">
-                <img src="image-assets/Rent.png">
+    
+            <div class="d-flex buyer-rent">
+                <div class="rent-div">
+                    <img src="image-assets/Rent.png">
+                </div>
+                <h3 class="buyer"><strong>Buyer / Renters submits <br> offer for property</strong></h3>            
             </div>
-            <h3 class="buyer">Buyer / Renters submits <br> offer for property</h3>            
-        </div>
-
-        <div class="d-flex seller-offer">
-            <h3 class="seller">Seller accepts offer</h3>
-            <div class="offer-div">
-                <img src="image-assets/Offer.png">
+    
+            <div class="d-flex seller-offer">
+                <h3 class="seller"><strong>Seller accepts offer</strong></h3>
+                <div class="offer-div">
+                    <img src="image-assets/Offer.png">
+                </div>
             </div>
-        </div>
-
-        <div class="d-flex pelow-payment">
-            <div class="payment-div">
-                <img src="image-assets/Payment.png">
+    
+            <div class="d-flex pelow-payment">
+                <div class="payment-div">
+                    <img src="image-assets/Payment.png">
+                </div>
+                <h3 class="pelow-text"><strong>Pelow makes payment, <br> everybody wins</strong></h3>            
             </div>
-            <h3 class="pelow-text">Pelow makes payment, <br> everybody wins</h3>            
         </div>
     </div>
 
     <div class="afford-it">
-        <h3 class="afford-text">What if you can't afford it?</h3>
+        <h3 class="afford-text"><strong>What if you can't afford it?</strong></h3>
         <div class="d-flex image-text">
             <div class="dollar-text">
                 <img src="image-assets/Dollar.png">
@@ -162,26 +196,26 @@
     </div>
 
     <div>        
-        <div class="d-flex">
+        <div class="d-flex flash-cards">
             <div class="first-card">
                 <div class="first-card-text">
-                    <h3 class="card-title">30,000 +</h3>
-                    <p class="card-text" style="color: red;">Users</p>
+                    <h2 class="card-title"><strong>30,000 +</strong></h2>
+                    <h3 class="card-text" style="color: red;">Users</h3>
                 </div>
                 <img src="image-assets/first-card.png">                
             </div>
             <div class="two-cards">
                 <div class="second-card">
                     <div class="second-card-text">
-                        <h3 class="card-title">Presence in</h3>
-                        <p class="card-text" style="color:rgb(64, 9, 153);">2 Continents</p>
+                        <h2 class="card-title"><strong>Presence in</strong></h2>
+                        <h3 class="card-text" style="color:rgb(64, 9, 153);">2 Continents</h3>
                     </div>
                     <img src="image-assets/second-card.png">                    
                 </div>
                 <div class="third-card">
                     <div class="third-card-text">
-                        <h3 class="card-title">Thousands of</h3>
-                        <p class="card-text" style="color:rgb(9, 153, 110);">Listings</p>
+                        <h2 class="card-title"><strong>Thousands of</strong></h2>
+                        <h3 class="card-text" style="color:rgb(9, 153, 110);">Listings</h3>
                     </div>
                     <img src="image-assets/third-card.png">                    
                 </div>
@@ -196,7 +230,7 @@
             <div class="d-flex">
                 <div class="safe-text-image">
                     <div class="safe-text"> 
-                        <h3>You are safe with us</h3>
+                        <h3><strong>You are safe with us</strong></h3>
                         <p>We have company presence in over 4 countries with <br> hands-on technical expertise to keep your <br> information safe at all times.</p>
                     </div>                    
                     <img src="image-assets/grid2.png" class="grid">
@@ -207,7 +241,7 @@
     </div>
 
     <div class="last-paragraph">
-        <h3 class="big-deal">We're kind of a big deal</h3>
+        <h3 class="big-deal"><strong>We're kind of a big deal</strong></h3>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-owner" role="tabpanel" aria-labelledby="nav-owner-tab">
                 <span class="image-set">
@@ -250,11 +284,11 @@
         </blockquote>
 
         <div class="ready-to-begin">
-            <h2 class="begin">Ready to begin?</h2>
-            <button type="button" class="btn btn-light">Register Now</button>
+            <h1 class="begin"><strong>Ready to begin?</strong></h1>
+            <button type="button" class="btn btn-light register-now" style="color: #39c0c0;">Register Now</button>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

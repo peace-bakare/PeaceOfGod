@@ -1,10 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
+header {
+    max-width: max-content;
 }
 
 .navbar-right {
     margin-left: 65em;
+}
+
+.login-register {
+    padding: 0 0 0 40em;
+}
+
+.topmost {
+    padding: 0 0 0 20em;
 }
 
 .navigation {
@@ -39,21 +46,38 @@
 .online-platform {
     text-align: center;
     margin-top: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 2em;
+    /* padding: 0 0 0 2em; */
 }
 
 .buy-now {
     text-align: center;
+    /* padding: 0 0 0 3em; */
 }
 
 .details {
     margin-top: 1%;
     margin-left: 18%;
+    padding: 0 0 0 6em;
 }
 
 #details {
     padding: 3%;
 }
+
+.vertical-line-one {
+    border-left: 4px solid lightgray;
+    height: 120px;
+    position: absolute;
+    margin: 2em 0 0 20em;
+}
+.vertical-line-two {
+    border-left: 4px solid lightgray;
+    height: 120px;
+    position: absolute;
+    margin: 2em 0 0 42em;
+}
+
 
 .operations {
     text-align: center;
@@ -82,43 +106,69 @@
 }
 
 .repeated-grid {
-    padding: 0 10em 0 82em;
+    position: absolute;
+    padding: 0 0 0 53em;
 }
 
 .how-it-works {
     text-align: center;
+    padding: 4em 0 0 0;
+}
+
+.image-text-mix{
+    padding: 0 0 0 15em;
 }
 
 .landlord-machine {
-    padding: 7em;
+    padding: 5em 7em 4em 9em;
 }
 
 .landlord {
-    padding: 2em 12em 0 3em;
+    padding: 2em 7em 0 3em;
 }
-/* .machine-div{
-    padding: 10em;
-    border-radius: 5em;
-} */
+
+.machine-div{
+    box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
+    border-radius: 2em;
+    padding: 2em 2em 2em 7em;
+}
 
 .buyer-rent {
-    padding: 7em;
+    padding: 5em 7em 4em 9em;
 }
 
 .buyer {
-    padding: 2em 0 0 8em;
+    padding: 2em 0 0 7em;
+}
+
+.rent-div{
+    box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
+    border-radius: 2em;
+    padding: 2em 7em 2em 2em;
 }
 
 .seller-offer {
-    padding: 7em;
+    padding: 5em 7em 4em 9em;
 }
 
 .seller {
-    padding: 2em 12em 0 3em;
+    padding: 2em 7em 0 3em;
+}
+
+.offer-div{
+    box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
+    border-radius: 2em;
+    padding: 2em 7em 2em 2em;
 }
 
 .pelow-payment {
-    padding: 7em;
+    padding: 5em 7em 4em 9em;
+}
+
+.payment-div{
+    box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
+    border-radius: 2em;
+    padding: 2em 7em 2em 2em;
 }
 
 .pelow-text {
@@ -133,6 +183,10 @@
 .afford-text {
     text-align: center;
     padding: 0 0 3em 0;
+}
+
+.image-text {
+    padding: 0 0 0 18em;
 }
 
 .dollar-text {
@@ -166,23 +220,27 @@
     border-radius: 50em;
 }
 
+.flash-cards {
+    padding: 10em 0 0 20em;
+}
+
 .first-card {
-    padding: 10em 2em 5em 4em;
+    padding: 10em 2em 5em 1em;
 }
 
 .first-card-text {
     position: absolute;
-    padding: 6em 8em 4em 3em;
+    padding: 6em 8em 4em 2em;
 }
 
 .second-card-text {
     position: absolute;
-    padding: 6em 8em 4em 3em;
+    padding: 6em 8em 4em 2em;
 }
 
 .third-card-text {
     position: absolute;
-    padding: 6em 8em 4em 3em;
+    padding: 6em 8em 4em 2em;
 }
 
 .cards-side-text {
@@ -190,7 +248,7 @@
 }
 
 .safe-text{
-    padding: 10em 8em 4em 8em;
+    padding: 10em 15em 4em 25em;
 }
 
 .last-paragraph {
@@ -232,7 +290,7 @@
 }
 
 .ready-to-begin {
-    background-color: #24bdbd;
+    background-color: #39c0c0;
     padding: 8em;
     margin-top: 3em;
     border-radius: 80% 80% 0 0 / 90px;
